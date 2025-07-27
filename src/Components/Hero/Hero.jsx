@@ -57,10 +57,10 @@ const Hero = () => {
   className="hero-connect"
   href="#contact"
   offset={50}
-  onClick={() => setMenu && setMenu("contact")}
 >
   Connect with me
 </AnchorLink>
+
 
         </div>
 

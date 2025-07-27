@@ -5,7 +5,7 @@ import express from './Express.png';
 import nodejs from './nodejs.png';
 import restapi from './Rest.png';
 import python from './Python.jpg';
-import fastapi from './FastAPI.jpg';
+import fastapi from './FastApi.jpg';
 import html from './HTML.png';
 import typescript from './Typescript.png';
 import sql from './sql.png';
