@@ -1,0 +1,249 @@
+/* General 'About' Section Styles */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px; /* Default margin for large screens */
+  transition: margin 0.4s ease, gap 0.4s ease;
+}
+
+.about-title {
+  position: relative;
+}
+
+.about-title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+  transition: font-size 0.4s ease;
+}
+
+.about-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.about-section {
+  display: flex;
+  gap: 80px;
+  align-items: center; /* Vertically align items */
+  transition: flex-direction 0.4s ease, gap 0.4s ease;
+}
+
+.about-left img {
+  width: 400px; /* Default image size */
+  object-fit: cover;
+  border-radius: 15px; /* Added for a softer look */
+  transition: width 0.4s ease;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.about-para {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.6; /* Improved readability */
+}
+
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-skill {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.about-skill p {
+  min-width: 150px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.about-skill hr {
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 8px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #DF8908 -5.09%, #B923E1 106.28%);
+}
+
+.about-achievements {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+
+.about-achievement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: 0.5s;
+  text-align: center; /* Ensure text is centered */
+}
+
+.about-achievement h1 {
+  font-size: 60px;
+  font-weight: 700;
+  background: linear-gradient(264deg, #DF8908 -5.09%, #B923E1 106.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-achievement p {
+  font-size: 22px;
+  font-weight: 500; /* Corrected from 500px */
+}
+
+/* Hover Effects */
+.about-skill:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.about-achievement:hover {
+  transform: scale(1.12);
+  transition: 0.5s;
+}
+
+
+/* =================================== */
+/* ========== RESPONSIVE CSS ========= */
+/* =================================== */
+
+/* For Tablets (e.g., iPads) */
+@media (max-width: 1024px) {
+  .about {
+    margin: 80px 80px;
+    gap: 60px;
+  }
+
+  .about-title h1 {
+    font-size: 70px;
+  }
+
+  .about-section {
+    gap: 60px;
+  }
+
+  .about-left img {
+    width: 300px;
+  }
+
+  .about-right {
+    gap: 60px;
+  }
+
+  .about-para {
+    font-size: 20px;
+  }
+
+  .about-skill p {
+    font-size: 20px;
+  }
+
+  .about-achievement h1 {
+    font-size: 50px;
+  }
+
+  .about-achievement p {
+    font-size: 20px;
+  }
+}
+
+/* For Mobile Phones */
+@media (max-width: 768px) {
+  .about {
+    margin: 50px 20px; /* Reduced margins for mobile */
+    gap: 50px;
+  }
+
+  .about-title h1 {
+    font-size: 50px; /* Smaller title */
+    padding: 0 10px;
+  }
+
+  .about-title img {
+    width: 130px; /* Scale down title decoration */
+  }
+
+  /* Stack the main about section vertically */
+  .about-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-left {
+    display: none; /* Hide the profile image on mobile to save space */
+  }
+
+  .about-right {
+    gap: 40px;
+    align-items: center; /* Center the content */
+    text-align: center; /* Center text */
+  }
+
+  .about-para {
+    font-size: 18px; /* Adjust paragraph font size */
+    text-align: left; /* Keep paragraphs left-aligned for readability */
+  }
+
+  .about-skills {
+    width: 100%;
+    gap: 25px;
+  }
+
+  .about-skill {
+    gap: 15px;
+    flex-direction: column; /* Stack skill text and bar */
+    align-items: flex-start;
+  }
+  
+  .about-skill p {
+    font-size: 18px;
+  }
+
+  .about-skill hr {
+    width: 100%; /* Make skill bar full width */
+  }
+
+  /* Stack achievements vertically */
+  .about-achievements {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+
+  .about-achievement h1 {
+    font-size: 40px;
+  }
+
+  .about-achievement p {
+    font-size: 18px;
+  }
+  
+  /* Less dramatic hover on mobile */
+  .about-achievement:hover {
+    transform: scale(1.05);
+  }
+}

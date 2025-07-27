@@ -1,0 +1,127 @@
+/* General 'Services' Section Styles */
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+  transition: margin 0.4s ease, gap 0.4s ease;
+}
+
+.services-title {
+  position: relative;
+}
+
+.services-title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+  transition: font-size 0.4s ease;
+}
+
+/* Container for the service cards */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row on desktop */
+  gap: 40px;
+  width: 100%;
+}
+
+/* Individual service card styling */
+.services-format {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid #555; /* Slightly visible border */
+  background: #222; /* Darker card background */
+  transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.service-img {
+  width: 100%;
+  height: 180px; /* Made image slightly smaller */
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #333; /* Placeholder color */
+}
+
+.services-format h3 {
+  font-size: 18px; /* s_no */
+  font-weight: 500;
+  color: #ccc;
+}
+
+.services-format h2 {
+  font-size: 28px; /* s_name */
+  font-weight: 700;
+  background: linear-gradient(270deg, #DF8908 50%, #B415FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: -10px; /* Pull title up a bit */
+}
+
+.services-readmore {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+  align-self: flex-start; /* Align to the left */
+}
+
+/* Hover effect for the card */
+.services-format:hover {
+  border-color: #ff00ff;
+  background: #2a2a2a;
+  transform: translateY(-10px); /* Lift effect on hover */
+}
+
+
+/* =================================== */
+/* ========== RESPONSIVE CSS ========= */
+/* =================================== */
+
+/* For Tablets (e.g., iPads) */
+@media (max-width: 1024px) {
+  .services {
+    margin: 80px 80px;
+    gap: 60px;
+  }
+
+  .services-title h1 {
+    font-size: 70px;
+  }
+
+  /* Switch to 2 columns on tablets */
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+/* For Mobile Phones */
+@media (max-width: 768px) {
+  .services {
+    margin: 50px 20px;
+    gap: 50px;
+  }
+
+  .services-title h1 {
+    font-size: 50px;
+    padding: 0;
+  }
+
+  /* Switch to a single column on mobile */
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .services-format h2 {
+    font-size: 24px;
+  }
+}
