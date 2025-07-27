@@ -106,22 +106,49 @@
 /* For Mobile Phones */
 @media (max-width: 768px) {
   .services {
-    margin: 50px 20px;
-    gap: 50px;
+    /* Reduce side margins to fit 3 columns */
+    margin: 50px 15px; 
+    gap: 40px;
   }
 
   .services-title h1 {
-    font-size: 50px;
+    font-size: 45px;
     padding: 0;
   }
 
-  /* Switch to a single column on mobile */
+  /* === KEY CHANGES FOR MOBILE === */
   .services-container {
-    grid-template-columns: 1fr;
-    gap: 25px;
+    /* 1. Change to 3 columns for mobile */
+    grid-template-columns: repeat(3, 1fr);
+    /* 2. Reduce the gap between cards */
+    gap: 10px; 
+  }
+
+  .services-format {
+    /* 3. Reduce padding inside each card */
+    padding: 15px; 
+    gap: 10px;
+  }
+
+  .service-img {
+    /* 4. Make image much smaller to fit */
+    height: 90px;
   }
   
   .services-format h2 {
-    font-size: 24px;
+    /* 5. Make the title font smaller */
+    font-size: 16px; 
+  }
+
+  .services-format h3 {
+    /* 6. Make the number font smaller */
+    font-size: 14px;
+  }
+
+  .services-readmore {
+    margin-top: 10px;
+    gap: 10px;
+    /* Optional: Hide read more text and only show arrow */
+    /* font-size: 0; */
   }
 }

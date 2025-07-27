@@ -28,19 +28,19 @@ const mywork_data = [
         w_no:4,
         w_name:"Pacman",
         w_img:project4_img,
-        w_url:'https://github.com/AlokW8'
+        w_url:'https://github.com/AlokW8/JavaScript_game'
     },
     {
         w_no:5,
         w_name:"FindHotels",
         w_img:project5_img,
-        w_url:'https://github.com/AlokW8'
+        w_url:'https://github.com/AlokW8/Major-Project'
     },
     {
         w_no:6,
-        w_name:"Web design",
+        w_name:"Optiq",
         w_img:project6_img,
-        w_url:'https://github.com/AlokW8'
+        w_url:'https://github.com/AlokW8/Ai_Test'
     },
 ]
  
