@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import Profile_img from '../../assets/profile_img.jpeg';
+import Profile_img from '../../assets/Profile_img.jpeg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
